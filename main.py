@@ -94,6 +94,16 @@ def list_char_with_comprehension(num_range):
 
 
 def df_with_iteration(col_count, row_count):
+    """
+    Generate DataFrame with iteration
+
+    Parameters
+    ----------
+    col_count : int
+        count of columns
+    row_count : int
+        count of rows
+    """
     print("--------------------------------------------------")
     print("df with iteration")
     start_time = time.time()
@@ -109,6 +119,16 @@ def df_with_iteration(col_count, row_count):
 
 
 def df_with_comprehension(col_count, row_count):
+    """
+    Generate DataFrame with comprehension
+
+    Parameters
+    ----------
+    col_count : int
+        count of columns
+    row_count : int
+        count of rows
+    """
     print("--------------------------------------------------")
     print("df with comprehension")
     start_time = time.time()
@@ -119,6 +139,9 @@ def df_with_comprehension(col_count, row_count):
 
 
 def main():
+    """
+    main method
+    """
     list_int_with_iteration(NUM_RANGE)
     list_int_with_comprehension(NUM_RANGE)
 
@@ -127,6 +150,7 @@ def main():
 
     df_with_iteration(COLUMN_COUNT, ROW_COUNT)
     df_with_comprehension(COLUMN_COUNT, ROW_COUNT)
+
 
 if __name__ == '__main__':
     main()
